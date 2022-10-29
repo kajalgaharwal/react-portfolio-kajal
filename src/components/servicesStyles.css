@@ -1,0 +1,46 @@
+.services-heading {
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+}
+#services {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: #292b46;
+  color: #fff;
+}
+section {
+  display: grid;
+  margin: 1rem 20rem;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  gap: 1.3rem;
+}
+section * {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #161616;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+  align-items: center;
+  justify-content: center;
+}
+section span {
+  font: 700 1rem 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+.serviceBox1 {
+  background-color: #fef2f2;
+}
+@media screen and (max-width: 740px) {
+  section {
+    display: grid;
+    margin: 0.1rem;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+    gap: 1.3rem;
+  }
+}
