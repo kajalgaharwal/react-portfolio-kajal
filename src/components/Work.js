@@ -12,7 +12,7 @@ const Work = () => {
             <WorkCard
               key={index}
               imgsrc={value.imgsrc}
-              heading={value.heading}
+              heading={value.title}
               text={value.text}
               view={value.view}
               source={value.source}
