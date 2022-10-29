@@ -1,4 +1,4 @@
-import projectImg1 from '../assets/pro3.png';
+import projectImg1 from '../assets/crypto.PNG';
 import projectImg2 from '../assets/tenzies.PNG';
 import projectImg3 from '../assets/pro5.png';
 
