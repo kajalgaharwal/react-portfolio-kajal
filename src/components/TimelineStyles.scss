@@ -8,7 +8,7 @@
   background-color: #000;
 
   .timelineBox {
-    width: 100%;
+    width: 75%;
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
@@ -20,17 +20,17 @@
     &::after {
       content: '';
       position: absolute;
-      width: 6px;
+      width: 5px;
       background-color: crimson;
       top: 0%;
-      bottom: 0%;
+      bottom: 10%;
       left: 50%;
       margin-left: -3px;
     }
   }
 
   .timelineItem {
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -63,7 +63,7 @@
     }
 
     > div {
-      padding: 20px 30px;
+      padding: 5px 10px;
       background-color: crimson;
       color: #fef2f2;
       border-radius: 6px;
@@ -80,7 +80,6 @@
     }
   }
 }
-
 @media screen and (max-width: 600px) {
   #timeline {
     .timelineBox::after {
@@ -89,8 +88,8 @@
 
     .timelineItem {
       width: 100%;
-      padding-left: 5rem;
-      padding-right: 2rem;
+      padding-left: 3rem;
+      padding-right: 5rem;
     }
 
     .rightTimeline {
