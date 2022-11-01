@@ -53,26 +53,28 @@ const Footer = () => {
             WebeeKajal.
           </p>
           <div className='social'>
-            <a href='https://www.instagram.com/' target={'blank'}>
+            <a href='https://www.instagram.com/webeekajal/' target={'blank'}>
               <FaInstagram
                 size={30}
                 style={{ color: '#fff', marginRight: '1rem' }}
               />
             </a>
-            <a href='https://twitter.com/home' target={'blank'}>
+            <a href='https://twitter.com/web_decoder' target={'blank'}>
               <FaTwitter
                 size={30}
                 style={{ color: '#fff', marginRight: '1rem' }}
               />
             </a>
 
-            <a href='https://www.linkedin.com/feed/' target={'blank'}>
+            <a
+              href='https://www.linkedin.com/in/kajal-gaharwal-6a3808246/'
+              target={'blank'}>
               <FaLinkedinIn
                 size={30}
                 style={{ color: '#fff', marginRight: '1rem' }}
               />
             </a>
-            <a href='https://github.com/' target={'blank'}>
+            <a href='https://github.com/kajalgaharwal' target={'blank'}>
               <FaGithub
                 size={30}
                 style={{ color: '#fff', marginRight: '1rem' }}
