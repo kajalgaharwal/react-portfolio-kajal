@@ -34,7 +34,7 @@ const ServicesProvide = () => {
   };
 
   return (
-    <div id='services'>
+    <div>
       <h1 className='services-heading'>You are looking for??</h1>
       <section>
         <motion.div
