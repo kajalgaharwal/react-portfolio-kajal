@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 // } from 'react-icons/ai';
 import '../components/ServicesProvideStyles.css';
 
-const Services = () => {
+const ServicesProvide = () => {
   const animations = {
     whileInView: {
       x: 0,
@@ -155,4 +155,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesProvide;
