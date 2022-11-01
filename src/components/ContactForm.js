@@ -2,35 +2,42 @@ import '../components/ContactFormStyles.css';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import toast from 'react-hot-toast';
-import { addDoc, collection } from 'firebase/firestore';
-import { db } from '../firebase';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [disableBtn, setDisableBtn] = useState(false);
-
-  const submitHandler = async e => {
+  const form = useRef();
+  const submitHandler = e => {
     e.preventDefault();
     setDisableBtn(true);
-    try {
-      await addDoc(collection(db, 'contacts'), {
-        name,
-        email,
-        message
-      });
-      setName('');
-      setEmail('');
-      setMessage('');
-      toast.success('Message Sent');
-      setDisableBtn(false);
-    } catch (error) {
-      toast.error('Error');
-      console.log(error);
-      setDisableBtn(false);
-    }
+    emailjs
+      .sendForm(
+        'service_1jom5gr',
+        'template_eh0va38',
+        form.current,
+        '9lNwVqkfye5yR2C5z'
+      )
+      .then(
+        result => {
+          setName('');
+          setEmail('');
+          setMessage('');
+          toast.success('Message Sent');
+          // console.log(result.text);
+        },
+        error => {
+          toast.error('Error');
+          console.log(error);
+          setDisableBtn(false);
+          // console.log(error.text);
+        }
+      );
   };
+
   const animations = {
     form: {
       initial: {
@@ -59,13 +66,14 @@ const ContactForm = () => {
   };
   return (
     <div className='form'>
-      <motion.form onSubmit={submitHandler} {...animations.form}>
+      <motion.form ref={form} onSubmit={submitHandler} {...animations.form}>
         <label> Name:</label>
         <input
           type='text'
           value={name}
           onChange={e => setName(e.target.value)}
           placeholder='Your Name'
+          name='name'
           required
         />
         <label> Email:</label>
@@ -73,6 +81,7 @@ const ContactForm = () => {
           type='email'
           placeholder='Your Email'
           required
+          name='email'
           value={email}
           onChange={e => setEmail(e.target.value)}
         />
@@ -81,6 +90,7 @@ const ContactForm = () => {
           placeholder='Type your message here...'
           rows='10'
           required
+          name='message'
           value={message}
           onChange={e => setMessage(e.target.value)}></textarea>
         <motion.button
@@ -91,7 +101,8 @@ const ContactForm = () => {
             backgroundColor: 'rgb(248, 217, 15)',
             color: '#222',
             border: '1px solid #fff',
-            fontWeight: '600'
+            fontWeight: '600',
+            cursor: 'pointer'
           }}
           disabled={disableBtn}
           className={disableBtn ? 'disableBtn' : ''}

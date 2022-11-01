@@ -1,14 +1,8 @@
 .services-heading {
   text-align: center;
-  padding: 1rem 0 2rem 0;
+  padding: 5rem 0 2rem 0;
 }
-#services {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  background-color: #292b46;
-  color: #fff;
-}
+
 section {
   display: grid;
   margin: 1rem 20rem;
@@ -16,9 +10,15 @@ section {
   height: 100%;
   gap: 1.3rem;
 }
+.solution {
+  padding: 2rem;
+}
+.solution p {
+  text-align: center;
+}
 section * {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   background-color: #fff;
   color: #161616;
   display: flex;
@@ -26,14 +26,12 @@ section * {
   transition: all 0.3s;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 section span {
-  font: 700 1rem 'Open Sans', sans-serif;
+  font: 700 1.5rem 'Open Sans', sans-serif;
   letter-spacing: 1px;
-}
-
-.serviceBox1 {
-  background-color: #fef2f2;
+  padding-top: 3rem;
 }
 @media screen and (max-width: 740px) {
   section {

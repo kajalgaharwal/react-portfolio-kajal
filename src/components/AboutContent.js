@@ -1,8 +1,8 @@
 import '../components/AboutContentStyles.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import aboutMeImg from '../assets/michele-orallo-ChenIO61cgE-unsplash.jpg';
-import aboutReactImg from '../assets/img1.jpg';
+import aboutMeImg from '../assets/cartoon1667280709193.jpg';
+import aboutBack from '../assets/cartoon1667280796261.jpg';
 
 const AboutContent = () => {
   return (
@@ -15,10 +15,9 @@ const AboutContent = () => {
           education in Masters degree in computer application along with 3+
           years of experience in this industry. As a designer, I am always
           willing to design fantastic looking interfaces that will give a real
-          experience to users and convert as much traffic as possible. I believe
-          in writing success stories in digital world as
-          <span>WebeeKajal. </span>I create secure and responsive websites for
-          my clients.
+          experience to users and convert as much traffic as possible. I create
+          secure and responsive websites for my clients.
+          <span> WebeeKajal. </span>
         </p>
         <Link to='/contact' className='btn'>
           Contact
@@ -30,7 +29,7 @@ const AboutContent = () => {
             <img src={aboutMeImg} className='img' alt='' />
           </div>
           <div className='img-stack bottom'>
-            <img src={aboutReactImg} className='img' alt='' />
+            <img src={aboutBack} className='img' alt='' />
           </div>
         </div>
       </div>

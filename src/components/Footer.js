@@ -4,7 +4,8 @@ import {
   FaMailBulk,
   FaLinkedinIn,
   FaTwitter,
-  FaInstagram
+  FaInstagram,
+  FaGithub
 } from 'react-icons/fa';
 import React from 'react';
 
@@ -67,6 +68,12 @@ const Footer = () => {
 
             <a href='https://www.linkedin.com/feed/' target={'blank'}>
               <FaLinkedinIn
+                size={30}
+                style={{ color: '#fff', marginRight: '1rem' }}
+              />
+            </a>
+            <a href='https://github.com/' target={'blank'}>
+              <FaGithub
                 size={30}
                 style={{ color: '#fff', marginRight: '1rem' }}
               />

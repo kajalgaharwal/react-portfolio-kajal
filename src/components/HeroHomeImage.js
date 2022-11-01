@@ -1,5 +1,5 @@
 import './HeroHomeImageStyles.css';
-import IntroImg from '../assets/img2.jpg';
+import IntroImg from '../assets/background.jpg';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import { motion } from 'framer-motion';

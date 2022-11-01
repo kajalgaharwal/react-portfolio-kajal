@@ -31,7 +31,7 @@
   text-align: center;
 }
 .right .img {
-  max-width: 90%;
+  max-width: 65%;
   border: 1px solid #333;
 }
 .right .top {
@@ -41,7 +41,7 @@
   z-index: 6;
 }
 .right .bottom {
-  grid-column: 4 /-1;
+  grid-column: 4 /-3;
   grid-row: 1;
   z-index: 5;
 }

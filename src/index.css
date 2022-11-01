@@ -21,18 +21,26 @@ a {
 }
 
 .btn {
-  padding: 12px 32px;
+  cursor: pointer;
+  padding: 10px 20px;
   font-size: 1rem;
   text-transform: uppercase;
   background-color: rgb(248, 217, 15);
   color: #222;
   border: 1px solid #fff;
   font-weight: 600;
-  cursor: pointer;
+}
+.service-details {
+  padding: 5px 15px;
+  font-size: 1rem;
+  background-color: rgb(248, 217, 15);
+  color: #222;
+  font-weight: 600;
 }
 .btn-light {
   background: transparent;
   color: #fff;
+  cursor: pointer;
 }
 .btn:hover {
   background: rgba(255, 255, 255, 0.2);
