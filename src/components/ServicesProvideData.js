@@ -1,4 +1,4 @@
-const TimelineData = [
+const ServicesProvideData = [
   {
     title: 'Web Development'
   },
@@ -19,4 +19,4 @@ const TimelineData = [
   }
 ];
 
-export default TimelineData;
+export default ServicesProvideData;
